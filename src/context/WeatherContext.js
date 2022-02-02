@@ -8,7 +8,7 @@ export const WeatherProvider = ({children}) => {
     const initialState = {
         date: getDate(),
         city: localStorage.getItem("city") ? JSON.parse(localStorage.getItem("city")) : null,
-        dark: true
+        dark: localStorage.getItem("dark") ? JSON.parse(localStorage.getItem("dark")) : false
     }
 
     // ⚙️ Weather Reducer
@@ -32,8 +32,8 @@ export const WeatherProvider = ({children}) => {
     // ⚙️ Weather Reducer Init
     const [state, dispatch] = useReducer(reducer, initialState)
 
+
     useEffect(() => {
-        state.dark = localStorage.getItem("dark") ? JSON.parse(localStorage.getItem("dark")) : false
         document.body.dataset["theme"]  = state.dark ?  "dark-theme" : "light-theme"
     }, [state.dark])
 

@@ -7,6 +7,7 @@ export const pages = {
     },
     about: {
         title: "About",
+        icon: "/images/welcome/welcome-ico-1.svg",
         text: "This application is designed to search and show the weather",
         version: "Version: 1.0.0",
         button: "Go Back"

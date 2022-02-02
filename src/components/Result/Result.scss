@@ -81,6 +81,7 @@
 
         @media (min-width: 992px) {
             gap: 30px;
+            font-size: 20px;
         }
 
         &-name {
@@ -106,6 +107,7 @@
         border-top-right-radius: 30px;
         transform: translateY(90%);
         transition: transform 0.25s ease 0.3s;
+        box-shadow: 0 0 2px 0px #6c6c6c;
 
         @media (min-width: 768px) {
             padding: 80px 40px 20px 40px;
