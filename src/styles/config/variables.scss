@@ -1,0 +1,25 @@
+:root {
+    --base-font-size: 16px;
+    --base-line-height: 24px;
+    --base-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body[data-theme="dark-theme"] {
+    --base-color-1: #242529;
+    --base-color-2: #ffffff;
+    --base-color-3: #5061f9;
+    --base-color-4: #8b8d95;
+    --base-color-5: #ffffff;
+    --base-color-6: #36373a;
+}
+
+body[data-theme="light-theme"] {
+    --base-color-1: #e1e6f1;
+    --base-color-2: #2c2d31;
+    --base-color-3: #5061f9;
+    --base-color-4: #8e8e93;
+    --base-color-5: #212533;
+    --base-color-6: #edeff6;
+}

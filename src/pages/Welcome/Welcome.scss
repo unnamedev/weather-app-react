@@ -1,0 +1,15 @@
+.page-welcome {
+    &__ico {
+        max-width: 230px;
+        width: 100%;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        max-width: 300px;
+        width: 100%;
+    }
+}

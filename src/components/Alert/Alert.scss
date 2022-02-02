@@ -1,0 +1,43 @@
+.alert {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    visibility: hidden;
+    min-width: 250px;
+    max-width: 800px;
+    z-index: 99;
+    padding: 15px;
+    background: #f66434;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 80px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 80px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
